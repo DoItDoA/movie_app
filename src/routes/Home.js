@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
 import "./Home.css";
+
 class Home extends React.Component {
   state = {
     isLoading: true,
@@ -18,9 +19,10 @@ class Home extends React.Component {
     ); // 주소로 부터 데이터 받아오기
     this.setState({ movies, isLoading: false });
   };
+
   componentDidMount() {
     this.getMovies();
-  }
+  } // 렌더링 끝나고 호출
 
   render() {
     const { isLoading, movies } = this.state;
