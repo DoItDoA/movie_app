@@ -11,11 +11,11 @@ class Home extends React.Component {
   getMovies = async () => {
     const {
       data: {
-        data: { movies },
+        data: { movies }, // ES6 방식
       },
     } = await axios.get(
       "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
-    );
+    ); // 주소로 부터 데이터 받아오기
     this.setState({ movies, isLoading: false });
   };
   componentDidMount() {
