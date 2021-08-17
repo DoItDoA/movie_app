@@ -1,6 +1,8 @@
 import React from "react";
-//console.log(props); 이용하여 location 부분을 보면 전송된 것을 볼수 있다.
-//react-router로 전송된 컴포넌트에 props가 있는데 그 history가 있다.
+
+// react-router로 이동하여 실행된 컴포넌트는 props안에 history, location, match, staticContext가 새로 생겨난다.
+// console.log(props); 이용하여 location 부분을 보면 전송된 것을 볼수 있다.
+// react-router로 전송된 컴포넌트에 props가 있는데 그 history가 있다.
 class Detail extends React.Component {
   componentDidMount() {
     const { location, history } = this.props;

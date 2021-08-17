@@ -6,11 +6,9 @@ import Detail from "./routes/Detail";
 import Navigation from "./components/Navigation";
 import "./App.css";
 
-// react-router로 이동하여 실행된 컴포넌트는 props안에 history, location, match, staticContext가 새로 생겨난다.
 // github에 홈페이지 전시할 때는 BrowserRouter 사용하면 까다롭기 때문에 HashRouter(주소에 #이 추가됨)로 변경하여 사용한다
 
-function App(props) {
-  console.log(props);
+function App() {
   return (
     <BrowserRouter>
       <Navigation />
